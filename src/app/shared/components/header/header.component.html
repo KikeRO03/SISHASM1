@@ -18,7 +18,16 @@
        }
       
        <!-- <h4 class="titulo">{{currentDate| date:'dd-MM-YYYY' }}</h4>  -->
-        <button class="btn btn-primary col-1 mx-2" routerLink="/login">Entrar</button>
+       
+       @if (logueado) {
+        <button class="btn btn-primary col-1 mx-2" routerLink="/login">Salir</button>
+       }@else {
+        <button class="btn btn-primary col-1 mx-2" routerLink="/dashboard">Entrar</button>
+       }
+       
+
+       
+        
 
         
     </div>
