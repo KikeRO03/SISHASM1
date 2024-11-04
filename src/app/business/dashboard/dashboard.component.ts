@@ -33,12 +33,12 @@ export default class DashboardComponent implements OnInit {
           data: [12, 19, 3, 5, 2, 3],
           backgroundColor: [
 
-            'rgba(255, 138, 138, 1)',
-            'rgba(25, 168, 255, 1)',
-            'rgba(255, 255, 170, 1)',
-            'rgba(14, 247, 255, 1)',
-            'rgba(134, 0, 242, 0.81)',
-            'rgba(255, 132, 67, 0.81)'
+            'rgba(255, 0, 1, 1.0)',
+            'rgba(1, 0, 255, 1.0)',
+            'rgba(255, 255, 1, 2.0)',
+            'rgba(1, 255, 255, 1.0)',
+            'rgba(255, 1, 255, 2.0)',
+            'rgba(0, 255, 1, 2.0)'
 
           ],
           borderColor: [
