@@ -71,12 +71,3 @@
 a{
     text-decoration: none;
 }
-.Scrolltable{
-    height: 200px; 
-      overflow-y:scroll; 
-      overflow-x: scroll; 
-      padding: 10px;
-      border: 1px solid #ddd; 
-      border-radius: 8px;
-      background-color: #f9f9f9; 
-    }
