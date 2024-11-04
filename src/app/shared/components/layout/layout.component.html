@@ -1,0 +1,17 @@
+<div class="container-fluid g-0">
+
+  <app-header (sideNavToggle)="headerStatus = $event;" />
+
+ 
+  <main>
+    <app-sidebar [headerStatus]="headerStatus" [class]="{'app-sidebar-open': headerStatus}" />
+    <div class="display-area p-3" [class]="{'display-area-shrink': headerStatus}">
+
+      <router-outlet />
+
+    </div>
+    <app-footer />
+  </main>
+
+  
+</div>
