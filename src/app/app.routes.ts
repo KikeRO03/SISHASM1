@@ -18,6 +18,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./business/archivo-clinic/archivo-clinic.component')
             },
             {
+                path: 'archivo',
+                loadComponent: () => import('./business/archivo/archivo.component')
+            },
+            {
                 path: 'buscar_archivo',
                 loadComponent: () => import('./business/archivo-clinic/components/busqueda/busqueda.component')
             },
