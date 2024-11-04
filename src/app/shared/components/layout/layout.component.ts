@@ -14,5 +14,5 @@ import LoginComponent from '../login/login.component';
 })
 export default class LayoutComponent {
   headerStatus: boolean = false;
-  logueado: boolean= true;
+  logueado: boolean= false;
 }
