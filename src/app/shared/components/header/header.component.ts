@@ -16,7 +16,7 @@ import { RouterLink } from '@angular/router';
 export class HeaderComponent   {
 
   logueado: boolean = true;
-user: string="Juan";
+user: string="Usuario";
 //user: string= "Martin, Perez";
 currentDate: Date = new Date();
 
