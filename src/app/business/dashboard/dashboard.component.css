@@ -1,3 +1,82 @@
 .grafica1{
     height: 300px;
 }
+.table{
+    position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Fondo del encabezado */
+  z-index: 1;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4)
+}
+
+.table-minimalist {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.table-minimalist th {
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Celdas de la tabla */
+.table-minimalist td {
+    text-align: center;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Alternar color en filas */
+.table-minimalist tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Resaltar fila al pasar el cursor */
+.table-minimalist tr:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Columna de detalles */
+.table-minimalist td.details {
+    text-align: center;
+    color: rgba(0, 76, 255, 0.6);
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.table-minimalist td.details:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.table-minimalist td.status-confirmado {
+    
+    color: rgba(34, 139, 34, 0.9); 
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-minimalist td.status-pendiente {
+    color: rgba(255, 0, 0, 0.9); 
+    font-weight: bold;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.Scrolltable{
+    height: 200px; 
+      overflow-y:scroll; 
+      overflow-x: scroll; 
+      padding: 10px;
+      border: 1px solid #ddd; 
+      border-radius: 8px;
+      background-color: #f9f9f9; 
+    }
