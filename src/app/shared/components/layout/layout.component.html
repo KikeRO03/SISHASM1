@@ -4,12 +4,25 @@
 
  
   <main>
+   
+   
+   @if (logueado) {
     <app-sidebar [headerStatus]="headerStatus" [class]="{'app-sidebar-open': headerStatus}" />
     <div class="display-area p-3" [class]="{'display-area-shrink': headerStatus}">
 
       <router-outlet />
 
     </div>
+   }
+
+   @if (!logueado) {
+    <app-login></app-login>
+   }
+   
+   
+   
+   
+    
     <app-footer />
   </main>
 
