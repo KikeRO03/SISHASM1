@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
@@ -5,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-archivo',
   standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet],
+  imports: [ReactiveFormsModule,RouterOutlet, CommonModule],
   templateUrl: './archivo.component.html',
   styleUrl: './archivo.component.css'
 })
