@@ -9,13 +9,16 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      
       "architect": {
+        
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/sishasm-v",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            
             "polyfills": [
               "zone.js"
             ],
@@ -66,16 +69,12 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "sishasm-v:build:production"
-            },
-            "development": {
-              "buildTarget": "sishasm-v:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
+          
+"builder": "@angular-devkit/build-angular:dev-server",
+"options": {
+"buildTarget": "sishasm-v:build",
+"proxyConfig": "src/proxy.conf.json"
+}
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
@@ -100,7 +99,11 @@
             "scripts": []
           }
         }
+        
       }
+
+
+
     }
   },
   "cli": {

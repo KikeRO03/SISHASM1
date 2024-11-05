@@ -12,8 +12,7 @@ import { AuthService } from '../../../core/services/auth.service';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export default class LoginComponent implements
-  OnInit {
+export default class LoginComponent implements OnInit {
 username: string = '';
 password: string = '';
 
