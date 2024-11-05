@@ -2,6 +2,10 @@ nav {
     height: 100%;
 }
 
+/* nav{
+    background: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YKb6pLW319HepgBL/fondo-bolsa-de-trabajo-imss-vacantes-imss-instituto-mexicano-del-seguro-social-mP4p5WwkNGcXnV54.jpg);
+} */
+
 .side-nav-button {
     display: flex;
     justify-content: center;

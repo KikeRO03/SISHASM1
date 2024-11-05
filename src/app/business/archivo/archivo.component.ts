@@ -13,7 +13,7 @@ export default class ArchivoComponent {
   form: FormGroup = new FormGroup
   ({
    expediente: new FormControl('', Validators.required),
-    nombre: new FormControl('', Validators.required),
+    paciente: new FormControl('', Validators.required),
     ap_paterno: new FormControl('', Validators.required),
     ap_materno: new FormControl('', Validators.required),
     sexo: new FormControl('', Validators.required),
@@ -22,7 +22,7 @@ export default class ArchivoComponent {
     domicilio: new FormControl('', Validators.required),
     telefono: new FormControl('', Validators.required),
     fecha: new FormControl('', Validators.required),
-    elabora: new FormControl('', Validators.required),
+    elaboro: new FormControl('', Validators.required),
     ubicacion: new FormControl('', Validators.required),
     status: new FormControl('', Validators.required),
   });

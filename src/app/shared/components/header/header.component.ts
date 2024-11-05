@@ -2,9 +2,8 @@ import { Component, EventEmitter, OnInit, Output, Pipe,} from '@angular/core';
 import { FechaserviceService } from '../../services/fechaservice.service';
 import { DatePipe } from '@angular/common';
 import { log } from 'console';
-import { RouterLink } from '@angular/router';
-
-
+import { Router, RouterLink } from '@angular/router';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -15,12 +14,12 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent   {
 
-  logueado: boolean = true;
+  // logueado: boolean = false;
 user: string="Usuario";
 //user: string= "Martin, Perez";
 currentDate: Date = new Date();
 
-constructor(private fechaService: FechaserviceService){
+constructor(private fechaService: FechaserviceService,private authService: AuthService, private router: Router){
   
 }
   // ngOnInit(): void {
@@ -39,6 +38,11 @@ constructor(private fechaService: FechaserviceService){
       this.sideNavToggle.emit(this.menuStatus)
     }
 
+ 
+
+    logout(): void{
+     this.authService.logout();
+    }
   }
 
 

@@ -1,29 +1,31 @@
 <div class="container-fluid g-0">
-
   <app-header (sideNavToggle)="headerStatus = $event;" />
 
- 
-  <main>
+   <main>  
    
-   
-   @if (logueado) {
+   @if(logueado){
+
     <app-sidebar [headerStatus]="headerStatus" [class]="{'app-sidebar-open': headerStatus}" />
     <div class="display-area p-3" [class]="{'display-area-shrink': headerStatus}">
-
       <router-outlet />
-
     </div>
    }
 
-   @if (!logueado) {
-    <app-login></app-login>
+   @if(!logueado){
+    
+    <router-outlet />
+  
    }
+    
    
-   
-   
+
    
     
+   
+    
+   <div class="fixed-bottom">
     <app-footer />
+   </div>
   </main>
 
   
