@@ -71,10 +71,26 @@
 a{
     text-decoration: none;
 }
-.iconform{
-    color: #235b4e;
+
+      .icon-container {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem; /* Espacio entre el ícono y el texto */
       }
-      .etiquetaicono{
-        margin-left: 4px;
-        font-weight: 700;
+      
+      .icon-container .iconform {
+        font-size: 2rem;
+        color: #235b4e;
+     /* Cambia el color del ícono si deseas */
       }
+      
+      .icon-container .etiquetaicono {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #235b4e;
+      }
+      
