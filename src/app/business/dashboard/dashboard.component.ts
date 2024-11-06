@@ -29,7 +29,7 @@ export default class DashboardComponent implements OnInit {
       data: { 
         labels: ['Partos', 'Abortos', 'Otb', 'displasias', 'Hernias', 'Ovito'],
         datasets: [{
-          label: '# of Votes',
+          label: 'Cirugias',
           data: [12, 19, 3, 5, 2, 3],
           backgroundColor: [
 
@@ -64,9 +64,9 @@ export default class DashboardComponent implements OnInit {
     this.chart1 = new Chart("MyChart1", {
       type: 'line', // Puedes cambiar el tipo de gráfica aquí
       data: { 
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Gionecologia', 'Traumatologia', 'Medicina Interna', 'oftalmologia', 'Gastrointerologia', 'Geriatria'],
         datasets: [{
-          label: '# of Votes',
+          label: 'Productividad',
           data: [12, 19, 3, 5, 2, 3],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',

@@ -9,7 +9,7 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private LOGIN_URL= 'http://localhost:9001/auth/login';
+  private LOGIN_URL= 'http://172.16.36.25:9001/auth/login';
   private tokenKey = '586E3272357538782F413F4428472B4B6250655368566B597033733676397924';
 
   constructor(private httpClient: HttpClient, private router: Router) { }
