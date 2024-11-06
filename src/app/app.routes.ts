@@ -1,7 +1,11 @@
 import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
 import { authenticatedGuard } from './core/guards/authenticated.guard';
-export const routes: Routes = [
+export const routes: Routes = [{
+    path: 'login',
+    loadComponent: () => import('./shared/components/login/login.component'),
+    canActivate:[authenticatedGuard]
+},
 
     {
         path:'',
@@ -58,11 +62,7 @@ export const routes: Routes = [
                 redirectTo: 'dashboard',
                 pathMatch:'full'
             },
-            {
-                path: 'login',
-                loadComponent: () => import('./shared/components/login/login.component'),
-                canActivate:[authenticatedGuard]
-            },
+            
         ]
     },
     {

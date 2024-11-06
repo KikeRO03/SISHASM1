@@ -20,9 +20,11 @@ export default  class LayoutComponent implements OnInit {
 
 
   
-constructor(private authService:AuthService){}
+constructor(private authService:AuthService){
+  this.logueado= this.authService.isAuthenticated();
+}
   ngOnInit(): void {
-    this.logueado= this.authService.isAuthenticated();
+   
   }
  
 
