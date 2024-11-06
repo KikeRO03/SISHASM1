@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../core/services/auth.service';
+import SidebarComponent from '../sidebar/sidebar.component';
 
 
 @Component({
@@ -30,7 +31,7 @@ password: string = '';
   
     login(): void{
       this.authService.login(this.username,this.password).subscribe({
-        next:()=> this.router.navigate(['/dashboard']),
+        next:()=> this.router.navigate(['/']),
         error:(err)=>console.log('Login Ha Fallado',err)
       })
     }
