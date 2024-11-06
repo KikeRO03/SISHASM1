@@ -9,7 +9,7 @@ export class TablaArchiService {
     this.tabla_data=
     [{
       expediente: "14423",
-      nombre_paciente: 'alexiiis',
+      nombre_paciente: 'alexis',
       ap_paterno: 'gomez',
       ap_materno: 'torres',
       sexo:'Masculino',
@@ -18,7 +18,7 @@ export class TablaArchiService {
       domicilio: "Gumercinda ramirez #3",
       telefono: "7838315029",
       fecha_elab: '21-02-2019',
-      elaboro: 'Juanito banana',
+      elaboro: 'Roberto Cordoba Eli',
       ubicacion:"farmacia",
       status: 1
     }]
