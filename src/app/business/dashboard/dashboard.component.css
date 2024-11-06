@@ -71,3 +71,10 @@
 a{
     text-decoration: none;
 }
+.iconform{
+    color: #235b4e;
+      }
+      .etiquetaicono{
+        margin-left: 4px;
+        font-weight: 700;
+      }
