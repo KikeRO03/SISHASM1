@@ -12,13 +12,17 @@ export class VacacionesService {
   constructor() {
     this.vacaciones = [
       {
-      
+
+    numero_empleado:1, 
     name:"Ivan",
     registro: "Oliver",
+    area:"X",
     autorizo: "Nayomi",
+    estado:"Aprobado",
     fecha_inicio:"2023-10-2024",
     fecha_termino:"2024-10-2024",
-    estado:"Aprobado",
+    turno:"Matutino",
+    
     }]
     
    }

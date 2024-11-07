@@ -12,55 +12,96 @@
              class="row g-6 needs-validation"
              novalidate
              >
-            <div class="row">
-                <!-- Campo de Nombre -->
-                <div class="col-md-3 mb-3">
-                    <div class="input-container">
-                    <label for="name" class="floating-label">Nombre</label>
-                    <input formControlName = "name" type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+
+             <div class="container">
+                <!-- Primera Fila -->
+                <div class="row mb-3">
+                    <!-- Número De Empleado -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="numero_empleado" class="floating-label">Número De Empleado</label>
+                            <input formControlName="numero_empleado" type="text" class="form-control" id="numero_empleado" placeholder="Número De Empleado" required>
+                        </div>
+                    </div>
+            
+                    <!-- Nombre -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="name" class="floating-label">Nombre</label>
+                            <input formControlName="name" type="text" class="form-control" id="name" placeholder="Nombre" required>
+                        </div>
+                    </div>
+            
+                    <!-- Registro -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="registro" class="floating-label">Registro</label>
+                            <input formControlName="registro" type="text" class="form-control" id="registro" placeholder="Registro" required>
+                        </div>
+                    </div>
+            
+                    <!-- Autorizo -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="autorizo" class="floating-label">Autorizo</label>
+                            <input formControlName="autorizo" type="text" class="form-control" id="autorizo" placeholder="Autorizo" required>
+                        </div>
+                    </div>
                 </div>
+            
+                <!-- Segunda Fila -->
+                <div class="row mb-3">
+                    <!-- Motivo -->
+                    <div class="col-md-6">
+                        <div class="input-container">
+                            <label for="motivo" class="floating-label">Motivo</label>
+                            <input formControlName="motivo" type="text" class="form-control" id="motivo" placeholder="Motivo" required>
+                        </div>
+                    </div>
+            
+                    <!-- Fecha Inicio -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="fecha_inicio" class="floating-label">Fecha Inicio</label>
+                            <input formControlName="fecha_inicio" type="date" class="form-control" id="fecha_inicio" required>
+                        </div>
+                    </div>
+            
+                    <!-- Fecha Término -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="fecha_termino" class="floating-label">Fecha Término</label>
+                            <input formControlName="fecha_termino" type="date" class="form-control" id="fecha_termino" required>
+                        </div>
+                    </div>
                 </div>
-                <!-- Campo de Registro -->
-                <div class="col-md-4 mb-3">
-                    <div class="input-container">
-                    <label for="registro" class="floating-label">Registro</label>
-                    <input formControlName = "registro" type ="text" class="form-control" id="registro" placeholder="Registro" required>
-                </div>
-            </div>
-                <div class="col-md-4 mb-4">
-                    <div class="input-container">
-                    <label for="autorizo" class="floating-label">Autorizo</label>
-                    <input formControlName = "autorizo" type ="text" class="form-control" id="autorizo" placeholder="Autorizo" required>
-                </div>
-            </div>
-            </div>
-  
-            <div class="row">
-                <!-- Campo de Motivo -->
-                <div class="col-md-6 mb-3">
-                    <div class="input-container">
-                    <label for="motivo" class="floating-label">Motivo</label>
-                    <input formControlName ="motivo" type = "text" class="form-control" id="motivo" placeholder="Motivo" required>
-                </div>
-                </div>
-                <!-- Campo de Fecha Inicio -->
-                <div class="col-md-3 mb-3">
-                    <div class="input-container">
-                    <label for="fecha_inicio" class="floating-label">Fecha Inicio</label>
-                    <input formControlName ="fecha_inicio" type="date" class="form-control" id="fecha_inicio" required>
-                </div>
-            </div>
-                <!-- Campo de Fecha Término -->
-                <div class="col-md-3 mb-3">
-                    <div class="input-container">
-                    <label for="fecha_termino" class="floating-label">Fecha Término</label>
-                    <input formControlName ="fecha_termino" type="date" class="form-control" id="fecha_termino" required>
+            
+                <!-- Tercera Fila -->
+                <div class="row mb-3">
+                    <!-- Turno -->
+                    <div class="col-md-3">
+                        <div class="input-container">
+                            <label for="turno" class="floating-label">Turno</label>
+                            <select formControlName="turno" class="form-select" id="turno" required>
+                                <option value="">Selecciona El Turno</option>
+                                <option value="Matutino">Matutino</option>
+                                <option value="Vespertino">Vespertino</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <!-- Área -->
+                    <div class="col-md-6">
+                        <div class="input-container">
+                            <label for="area" class="floating-label">Área</label>
+                            <input formControlName="area" type="text" class="form-control" id="area" placeholder="Área" required>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            </div>
-  
-  
+            
+            
             <div class="row">
           
                 <div class="col-sm mb-4">
@@ -80,12 +121,15 @@
             <table class="table table-responsive">
                 <thead class="thead-dark">
                     <tr>
+                        <th scope="col">Numero De Empleado</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Registro</th>
                         <th scope="col">Autorizo</th>
                         <th scope="col">Motivo</th>
                         <th scope="col">Fecha Inicio</th>
                         <th scope="col">Fecha Termino</th>
+                        <th scope="col">Turno</th>
+                        <th scope="col">Area</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -93,12 +137,15 @@
                     @for (item of ausenciasService.ausencias; track $index) {
                         <tr>
                           
+                            <td>{{item.numero_empleado}}</td>
                             <td>{{item.name}}</td>
                             <td>{{item.registro}}</td>
                             <td>{{item.autorizo}}</td>
                             <td>{{item.motivo}}</td>
                             <td>{{item.fecha_inicio}}</td>
                             <td>{{item.fecha_termino}}</td>
+                            <td>{{item.turno}}</td>
+                            <td>{{item.area}}</td>
                             <td><div class="tablaiconos"><a href="#"><i class="tableiconE bi bi-pencil-square"></i></a>  <a href="#"><i class="tableiconD bi bi-trash3-fill"></i></a></div></td>
                         </tr>
                         
