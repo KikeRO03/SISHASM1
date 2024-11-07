@@ -127,7 +127,7 @@
             </i>
               <div class="col-md-4 input-container">
                 <label for="nomCirujano" class="floating-label"
-                  >Nombre del Cirujano</label
+                  >Cirujano</label
                 >
                 <select
                   formControlName="nomCirujano"
@@ -142,7 +142,7 @@
 
               <div class="col-md-4 input-container">
                 <label for="nomAnestesiologo" class="floating-label"
-                  >Nombre del Anestesiólogo</label
+                  >Anestesiólogo</label
                 >
                 <select
                   formControlName="nomAnestesiologo"
@@ -157,7 +157,7 @@
 
               <div class="col-md-4 input-container">
                 <label for="nomResidente" class="floating-label"
-                  >Nombre del Residente</label
+                  >Residente</label
                 >
                 <select
                   formControlName="nomResidente"
@@ -171,12 +171,12 @@
               </div>
 
               <div class="col-md-4 input-container">
-                <label for="nomEnfeInt" class="floating-label"
-                  >Nombre del Enfermero Interno</label
+                <label for="nomEnfeInst" class="floating-label"
+                  >Enfermero Instrumentista</label
                 >
                 <select
-                  formControlName="nomEnfeInt"
-                  id="nomEnfeInt"
+                  formControlName="nomEnfeInst"
+                  id="nomEnfeInst"
                   class="form-select"
                   required
                 >
@@ -187,7 +187,7 @@
 
               <div class="col-md-4 input-container">
                 <label for="nomEnfeCir" class="floating-label"
-                  >Nombre del Enfermero Circulante</label
+                  >Enfermero Circulante</label
                 >
                 <select
                   formControlName="nomEnfeCir"
@@ -201,12 +201,12 @@
               </div>
 
               <div class="col-md-4 input-container">
-                <label for="nomInstrumentista" class="floating-label"
-                  >Nombre del Instrumentista</label
+                <label for="nomInterno" class="floating-label"
+                  >Interno</label
                 >
                 <select
-                  formControlName="nomInstrumentista"
-                  id="nomInstrumentista"
+                  formControlName="nomInterno"
+                  id="nomInterno"
                   class="form-select"
                   required
                 >
@@ -216,14 +216,14 @@
               </div>
               <div class="col-md-12 input-container">
                 <label for="EquipoExterno" class="floating-label"
-                  >Equipo externo</label
+                  >Equipo de apoyo externo</label
                 >
                 <input
                   formControlName="EquipoExterno"
                   type="text"
                   class="form-control"
                   id="EquipoExterno"
-                  placeholder="Nombre"
+                  placeholder="Describir"
                   required
                 />
               </div>
@@ -386,9 +386,9 @@
         <th scope="col">Anestesiólogo</th>
         <th scope="col">Residente</th>
         <th scope="col">Cirugía</th>
-        <th scope="col">Interno</th>
+        <th scope="col">Instrumentisa</th>
         <th scope="col">Circulante</th>
-        <th scope="col">Instrumentista</th>
+        <th scope="col">Interno</th>
         <th scope="col">Equipo A.Externo</th>
         <th scope="col">Anestesia</th>
         <th scope="col">Inicio</th>
@@ -413,9 +413,9 @@
           <td>{{ cirugias.nomAnestesiologo }}</td>
           <td>{{ cirugias.nomResidente }}</td>
           <td>{{ cirugias.nomCirugia }}</td>
-          <td>{{ cirugias.nomEnfeInt }}</td>
+          <td>{{ cirugias.nomEnfeInst }}</td>
           <td>{{ cirugias.nomEnfeCir }}</td>
-          <td>{{ cirugias.nomInstrumentista }}</td>
+          <td>{{ cirugias.nomInterno }}</td>
           <td>{{ cirugias.EquipoExterno }}</td>
           <td>{{ cirugias.tipoAnes }}</td>
           <td>{{ cirugias.iniciaAnes }}</td>

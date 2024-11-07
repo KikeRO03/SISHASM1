@@ -11,9 +11,9 @@ export default interface Cirugias{
     nomAnestesiologo: String;
     nomResidente: String;
     nomCirugia: String;
-    nomEnfeInt: String;
+    nomEnfeInst: String;
     nomEnfeCir: String;
-    nomInstrumentista: String;
+    nomInterno: String;
     EquipoExterno: String;
     tipoAnes: String;
     iniciaAnes: string;
