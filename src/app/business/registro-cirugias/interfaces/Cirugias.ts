@@ -13,6 +13,8 @@ export default interface Cirugias{
     nomCirugia: String;
     nomEnfeInt: String;
     nomEnfeCir: String;
+    nomInstrumentista: String;
+    EquipoExterno: String;
     tipoAnes: String;
     iniciaAnes: string;
     finAnes: string;

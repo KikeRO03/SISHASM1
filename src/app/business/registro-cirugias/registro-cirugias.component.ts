@@ -27,6 +27,8 @@ export default class RegistroCirugiasComponent {
     nomCirugia: new FormControl(''),
     nomEnfeInt: new FormControl(''),
     nomEnfeCir: new FormControl(''),
+    nomInstrumentista: new FormControl(''),
+    EquipoExterno: new FormControl(''),
     tipoAnes: new FormControl(''),
     iniciaAnes: new FormControl(''),
     finAnes: new FormControl(''),
