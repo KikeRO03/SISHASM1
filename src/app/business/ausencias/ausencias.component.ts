@@ -16,12 +16,15 @@ export default class AusenciasComponent {
 
   ausenciasForm:FormGroup = new FormGroup
   ({
+    numero_empleado: new FormControl(''),
     name: new FormControl(''),
     registro: new FormControl(''),
     autorizo: new FormControl(''),
     motivo: new FormControl(''),
     fecha_inicio: new FormControl(''),
     fecha_termino: new FormControl(''),
+    turno: new FormControl(''),
+    area: new FormControl(''),
   })
 
   agregarData(){

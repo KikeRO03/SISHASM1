@@ -17,12 +17,16 @@ export default class VacacionesComponent {
 
   vacacionesForms: FormGroup = new FormGroup
   ({
+    numero_empleado: new FormControl(''),
     name: new FormControl(''),
     registro: new FormControl(''),
+    area: new FormControl(''),
     autorizo: new FormControl(''),
+    estado: new FormControl(''),
     fecha_inicio: new FormControl(''),
     fecha_termino: new FormControl(''),
-    estado: new FormControl(''),
+    turno: new FormControl(''),
+    
 
   })
   
