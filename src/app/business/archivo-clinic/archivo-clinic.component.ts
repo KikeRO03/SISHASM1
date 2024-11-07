@@ -1,20 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TablaArchiService } from './services/tabla-archi.service';
 import { RouterOutlet } from '@angular/router';
 import { ArchivoTableComponent } from './components/archivo-table/archivo-table.component';
 import Tabla_arch from './interfaces/Tabla_Arch';
 import { CommonModule } from '@angular/common';
-
+import { PdfComponent } from "./components/pdf/pdf.component";  
 @Component({
   selector: 'app-archivo-clinic',
   standalone: true,
-  imports: [ReactiveFormsModule, RouterOutlet,ArchivoTableComponent,CommonModule],
+  imports: [ReactiveFormsModule, RouterOutlet, ArchivoTableComponent, CommonModule, PdfComponent],
   templateUrl: './archivo-clinic.component.html',
   styleUrl: './archivo-clinic.component.css'
 })
-export default class ArchivoClinicComponent {
+export default class ArchivoClinicComponent implements OnInit{
   constructor(public tabla_archive: TablaArchiService){}
+  
+  ngOnInit(): void {
+  }
 
   form: FormGroup = new FormGroup
   ({
@@ -44,5 +47,12 @@ export default class ArchivoClinicComponent {
       resetForm(){
         this.form.reset();
       }
-    ageOptions: number[] = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];}
+    ageOptions: number[] = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+
+    
+  }
+    
+    
+    
+    
 
