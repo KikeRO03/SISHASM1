@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CirugiasService } from './services/cirugias.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registro-cirugias',
@@ -46,19 +47,24 @@ export default class RegistroCirugiasComponent {
 
   ConfirmarDatos() {
     if (this.cirugiaForm.valid) {
-      console.log('Datos del formulario:', this.cirugiaForm.value);
-      
-      // Lógica para agregar el paciente y guardar en sessionStorage
-      this.CirugiasService.agregarPaciente(this.cirugiaForm.value);
-      sessionStorage.setItem('form', JSON.stringify(this.cirugiaForm.value));
-      const formStorage = JSON.parse(sessionStorage.getItem('form')!) as CirugiasService;
-  
-      alert('Formulario guardado correctamente!');
-      
-      // Limpiar el formulario
-      this.cirugiaForm.reset();
+      Swal.fire({
+        title: "¿Quieres guardar los cambios?",
+        showCancelButton: true,
+        confirmButtonText: "Guardar",
+        cancelButtonText: "Cancelar",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Guardar datos y limpiar el formulario
+          this.CirugiasService.agregarPaciente(this.cirugiaForm.value);
+          sessionStorage.setItem('form', JSON.stringify(this.cirugiaForm.value));
+          Swal.fire("Guardado!", "Los datos han sido guardados correctamente.", "success");
+          
+          // Limpia los campos del formulario
+          this.cirugiaForm.reset();
+        }
+      });
     } else {
-      alert('El formulario no es válido. Por favor, rellena todos los campos requeridos.');
+      Swal.fire("Error", "El formulario no es válido. Por favor, rellena todos los campos requeridos.", "error");
     }
   }
   
