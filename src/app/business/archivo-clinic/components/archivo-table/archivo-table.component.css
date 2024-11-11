@@ -11,6 +11,10 @@
   background-color: transparent;
   border: none;
 }
+btn-imprimir{
+  background-color: transparent;
+  border: none;
+}
 .tablaiconos{
     display: flex;
 }
