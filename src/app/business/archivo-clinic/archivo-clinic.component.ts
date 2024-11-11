@@ -54,6 +54,8 @@ export default class ArchivoClinicComponent implements OnInit{
       Swal.fire({
         title: 'Confirmado',
         text: 'Su registro se agrego correctamente',
+        icon: 'success'
+
     })
   }
     
