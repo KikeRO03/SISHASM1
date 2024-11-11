@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TablaArchiService } from '../../services/tabla-archi.service';
 import jsPDF from 'jspdf';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-archivo-table',
   standalone: true,
@@ -49,4 +49,23 @@ export class ArchivoTableComponent {
   // Guardar el PDF
   doc.save('formulario.pdf');
 }
+iconDelete(){
+  Swal.fire({
+    title: "Esta seguro?",
+    text: "No podra recuperar este registro",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Si, borrar registro"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Borrado!",
+        text: "Registro borrado con exito",
+        icon: "success"
+      });
+    }
+  });
+ } 
 }

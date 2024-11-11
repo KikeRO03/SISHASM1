@@ -7,6 +7,10 @@
     color: crimson;
     font-size: 1.5em;
 }
+.iconboton-Popup{
+  background-color: transparent;
+  border: none;
+}
 .tablaiconos{
     display: flex;
 }
