@@ -6,6 +6,7 @@ import { ArchivoTableComponent } from './components/archivo-table/archivo-table.
 import Tabla_arch from './interfaces/Tabla_Arch';
 import { CommonModule } from '@angular/common';
 import { PdfComponent } from "./components/pdf/pdf.component";  
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-archivo-clinic',
   standalone: true,
@@ -49,10 +50,12 @@ export default class ArchivoClinicComponent implements OnInit{
       }
     ageOptions: number[] = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 
+    confirmBox(){
+      Swal.fire({
+        title: 'Confirmado',
+        text: 'Su registro se agrego correctamente',
+    })
+  }
     
   }
     
-    
-    
-    
-
