@@ -4,6 +4,7 @@
     font-size: 1.5em;
 }
 .tableiconD{
+  margin-right: 1em;
     color: crimson;
     font-size: 1.5em;
 }
@@ -11,7 +12,7 @@
   background-color: transparent;
   border: none;
 }
-btn-imprimir{
+.btn-imprimir{
   background-color: transparent;
   border: none;
 }
